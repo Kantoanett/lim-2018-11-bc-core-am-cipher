@@ -10,18 +10,34 @@
     <h1>Cifrado César</h1>
       <form>
       <div>
-        <label for="code">Coloca el número de desplazamiento</label>
+        <label for="hidden-code">Coloca el número de desplazamiento</label>
       <br>
-        <input type="number" placeholder="Desplazamiento" id="code">
+        <input type="number" placeholder="Desplazamiento" id="hidden-code">
       <hr>
       </div>
 
       <div>
-        <label for="phrase">Coloca la palabra que desees cifrar o descifrar</label>
+        <label for="enter-text">Coloca la palabra que desees cifrar o descifrar</label>
       <br>
-        <input type="text" placeholder="Palabra" id="phrase">
+        <input type="text" placeholder="Palabra" id="enter-text">
       </div>
-      <button type="button" id=""
+      <br>
+      <div>
+      <button class="button" id="btn-cipher">Cifrar</button>
+      <button class="button" id="btn-descipher">Descifrar</button>
+      <hr>
+      </div>
+
+      <div>
+        <label for="answer">El texto es</label>
+        <br>
+        <input type="text" id="resultado">
+      </div>
+      <br>
+      <div>
+        <button class="button" id="btn-reboot">Volver a escribir el mensaje</button>
+      </div>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
