@@ -9,15 +9,15 @@ const btnDescipher = document.getElementById("btn-descipher");
 const result = document.getElementById("resultado");
 
 //Función que se ejecuta al hacer click en Cifrar
-//btnCipher.addEventListener("click",encode);
+btnCipher.addEventListener("click",encode);
 
 //Codificar: Función que mostrará el texto al hacer click en cifrar
 function encode(){
 //Crear variable para guardar valor
   let offset = parseInt(hiddenCode.value);
   let string = mainText.value;
-//Poner valor en la caja de texto
-  result.value=string;
+/*Poner valor en la caja de texto
+  result.value=newWord;*/
 //Asignando valor de cadena vacía
   newWord = "";
   for(let i=0; i<string.length; i++){
@@ -27,8 +27,30 @@ function encode(){
 /*Reemplazo la variable en la fórmula para obtener la letra original del alfabeto
 newWord = newWord + (String.fromCharCode ((((string.charCodeAt(i)-65) + offset) % 26) + 65));*/
       newWord = newWord + (String.fromCharCode ((((mainTextAscii-65) + offset) % 26) + 65));
+      console.log(newWord);
       }
-}return (newWord);
+//Con esto, devuelve el cifrado en la caja de texto
+}return result.value=newWord;
 }
 
-btnCipher.addEventListener("click",encode);
+//Función que se ejecuta al hacer click en Descifrar
+btnDescipher.addEventListener("click",decode);
+
+//Decodificar: Función que mostrará el texto al hacer click en descifrar
+function decode(){
+  let offset = parseInt(hiddenCode.value);
+  let string = mainText.value;
+  /*Poner valor en la caja de texto
+    result.value=newWord;*/
+  newWord = "";
+  for(let i=0; i<string.length; i++){
+//Variable para obtener el código ASCII de cada letra ingresada en el texto
+    let mainTextAscii = string.charCodeAt(i);
+      if (65 <= string.charCodeAt(i) <= 90) {
+/*Reemplazo la variable en la fórmula para obtener la letra original del alfabeto
+newWord = newWord + (String.fromCharCode ((((string.charCodeAt(i)-65) + offset) % 26) + 65));*/
+      newWord = newWord + (String.fromCharCode ((((mainTextAscii-65) - offset) % 26) + 65));
+      }
+//Con esto, devuelve el descifrado en la caja de texto
+}return result.value=newWord;
+}
