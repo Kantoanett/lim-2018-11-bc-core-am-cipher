@@ -15,7 +15,7 @@ btnCipher.addEventListener("click",encode);
 function encode(){
 //Crear variable para guardar valor
   let offset = parseInt(hiddenCode.value);
-  let string = mainText.value;
+  let string = mainText.value.toUpperCase();
 /*Poner valor en la caja de texto
   result.value=newWord;*/
 //Asignando valor de cadena vacía
@@ -27,10 +27,14 @@ function encode(){
 /*Reemplazo la variable en la fórmula para obtener la letra original del alfabeto
 newWord = newWord + (String.fromCharCode ((((string.charCodeAt(i)-65) + offset) % 26) + 65));*/
       newWord = newWord + (String.fromCharCode ((((mainTextAscii-65) + offset) % 26) + 65));
-      console.log(newWord);
-      }
+}
+      else if (mainTextAscii === 32) {
+      newWord = newWord + String.fromCharCode(mainTextAscii);
+}
+}
+}
 //Con esto, devuelve el cifrado en la caja de texto
-}return result.value=newWord;
+} return result.value = newWord;
 }
 
 //Función que se ejecuta al hacer click en Descifrar
@@ -39,7 +43,7 @@ btnDescipher.addEventListener("click",decode);
 //Decodificar: Función que mostrará el texto al hacer click en descifrar
 function decode(){
   let offset = parseInt(hiddenCode.value);
-  let string = mainText.value;
+  let string = mainText.value.toUpperCase();
   /*Poner valor en la caja de texto
     result.value=newWord;*/
   newWord = "";
@@ -49,8 +53,16 @@ function decode(){
       if (65 <= string.charCodeAt(i) <= 90) {
 /*Reemplazo la variable en la fórmula para obtener la letra original del alfabeto
 newWord = newWord + (String.fromCharCode ((((string.charCodeAt(i)-65) + offset) % 26) + 65));*/
-      newWord = newWord + (String.fromCharCode ((((mainTextAscii-65) - offset) % 26) + 65));
-      }
-//Con esto, devuelve el descifrado en la caja de texto
-}return result.value=newWord;
+      newWord = newWord + (String.fromCharCode ((((mainTextAscii-90) - offset) % 26) + 90));
 }
+      else if (mainTextAscii === 32) {
+     newWord = newWord + String.fromCharCode(mainTextAscii);
+}
+}
+}
+//Con esto, devuelve el descifrado en la caja de texto
+} return result.value = newWord;
+}
+result.addEventListener("click", () => {
+  location.reload ();
+});
