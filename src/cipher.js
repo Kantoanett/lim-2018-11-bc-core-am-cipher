@@ -1,6 +1,7 @@
 window.cipher = {
 encode: function(offset, string){
-  newWord = "";
+let  newWord = "";
+
 /*Bucle para obtener el código ASCII de cada letra ingresada en el texto*/
   for(let i=0; i<string.length; i++){
     let mainTextAscii = string.charCodeAt(i);
@@ -15,11 +16,12 @@ encode: function(offset, string){
 }
 }
 //Con esto, devuelve el cifrado en la caja de texto
+  let result;
   return result.value = newWord;
 },
 
 decode: function(offset, string){
-  newWord = "";
+let  newWord = "";
 /*Bucle para obtener el código ASCII de cada letra ingresada en el texto*/
   for(let i=0; i<string.length; i++){
     let mainTextAscii = string.charCodeAt(i);
@@ -34,7 +36,8 @@ decode: function(offset, string){
 }
 }
 //Con esto, devuelve el cifrado en la caja de texto
-  return result.value = newWord;
+   let result;
+   return result.value = newWord;
 
 },
 
