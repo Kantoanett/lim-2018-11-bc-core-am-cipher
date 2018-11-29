@@ -2,42 +2,57 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <title>Namasté</title>
   </head>
   <body>
-    <div id="root"></div>
-    <h1>Cifrado César</h1>
-      <form>
-      <div>
-        <label for="hidden-code">Coloca el número de desplazamiento</label>
+    <div class="header" style="text-align: center;">
+          <h1>NAMASTÉ</h1>
+          <h2>Envía o recibe mensajes que inspiran...</h2>
+      </div>
+    <div class="section">
+        <div class="row">
+          <div class="col-12 col-s-12 " style="text-align: center;">
+            <label for="hidden-code">Coloca el número de desplazamiento</label>
       <br>
-        <input type="number" placeholder="Desplazamiento" id="hidden-code">
+            <input type="number" placeholder="Desplazamiento" id="hidden-code">
       <hr>
-      </div>
+          </div>
+        </div>
 
-      <div>
-        <label for="enter-text">Coloca la palabra que desees cifrar o descifrar</label>
-      <br>
-        <input type="text" placeholder="Palabra" id="enter-text">
-      </div>
-      <br>
-      <div>
-      <button type="button" id="btn-cipher">Cifrar</button>
-      <button type="button" id="btn-descipher">Descifrar</button>
-      <hr>
-      </div>
-
-      <div>
-        <label for="answer">El texto es</label>
+        <div class="row">
+          <div class="col-12 col-s-12" style="text-align: center;">
+            <label for="enter-text">Coloca la palabra de luz que desees cifrar o descifrar</label>
         <br>
-        <input type="text" id="resultado">
-      </div>
-      <br>
-      <div>
-        <button class="button" id="btn-reboot">Volver a escribir el mensaje</button>
-      </div>
-      </form>
+            <textarea rows="2" cols="20" id="enter-text" placeholder="Palabra"></textarea>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-3 col-s-4 no" style="text-align: center;"></div>
+          <div class="col-3 col-s-4 no" style="text-align: center;">
+            <button type="button" id="btn-cipher">Cifrar</button>
+            <button type="button" id="btn-descipher">Descifrar</button>
+          </div>
+        <div class="col-3 col-s-4 no" style="text-align: center;"></div>
+      <hr>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-s-12" style="text-align: center;">
+            <label for="answer">El texto es</label>
+        <br>
+            <textarea rows="2" cols="20" id="resultado"></textarea>
+          </div>
+        </div>
+        <br>
+
+        <div class="footer">
+          <div class="col-12 col-s-12" style="text-align: center;">
+          <button class="button" id="btn-reboot">Volver a escribir el mensaje</button>
+        </div>
+
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>

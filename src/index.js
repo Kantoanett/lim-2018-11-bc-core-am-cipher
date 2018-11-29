@@ -8,7 +8,7 @@ let newWord;
 const btnCipher = document.getElementById("btn-cipher");
 const btnDescipher = document.getElementById("btn-descipher");
 //Creando una constante en la que se va a obtener el elemento con id resultado
-//const result = document.getElementById("resultado");
+const result = document.getElementById("resultado");
 
 //Función que se ejecuta al hacer click en Cifrar
 btnCipher.addEventListener("click",hiddenText);
@@ -21,7 +21,7 @@ function hiddenText(){
 //Con esta variable se va a obtener el valor después de ejecutar encode:function dada la conexión con cipher.encode
     newWord = cipher.encode(hiddenCodeValue, mainTextValue);
 //Con esto, devuelve el cifrado en la caja de texto
-  let result;
+
   return result.value = newWord;
 }
 
@@ -37,7 +37,7 @@ function revealedText(){
     newWord = cipher.decode(hiddenCodeValue, mainTextValue);
 
 //Con esto, devuelve el descifrado en la caja de texto
-  let result;
+
   return result.value = newWord;
 }
 
