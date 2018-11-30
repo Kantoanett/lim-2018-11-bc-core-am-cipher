@@ -1,5 +1,5 @@
 # ***NAMASTÉ***
->> *"Very day may not be good but there is something good in every day".*
+> *"Very day may not be good but there is something good in every day".*
 
 ## Intro
 Esta plataforma web está enfocado en personas que les gusta sentirse inspiradas y disfrutan de momentos felices cada día. Permite enviar o descubrir mensajes motivadores personalizados según el tipo de persona al que va dirigido.
