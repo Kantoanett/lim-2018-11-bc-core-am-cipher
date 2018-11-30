@@ -20,7 +20,7 @@ El primer objetivo es que los usuarios al ver la plataforma se identifiquen y se
 ## Solución al problema de los usuarios
 Es personalizado; es decir, permite que el contexto del mensaje sea el ideal. Dependiendo de si la persona a recibir el mensaje está pasando por un momento bueno o no tan bueno, esta plataforma permitirá inyectar mensajes o frases con una pequeña dosis de inspiración.
 
-*Para acceder a la página, haz click en el link:* [Sin titulo] (https://kantoanett.github.io/lim-2018-11-bc-core-am-cipher/src/)
+*Para acceder a la página, haz click en el link:* [Namasté](https://kantoanett.github.io/lim-2018-11-bc-core-am-cipher/src/)
 
 ***Adicional***
 > Es muy importante cómo nos sentimos cada día ya que eso impacta en las cosas que hacemos. Aquí dos blogs llenos de *inspirational quotes:*
