@@ -14,7 +14,7 @@ Esta plataforma web está enfocado en personas que les gusta sentirse inspiradas
 ## Los usuarios y su relación con el producto
 Va dirigido a mujeres y hombres de 25 a 35 años que siempre anden en una búsqueda de mejorar la versión de ellos mismos. Estas personas por lo general llevan un estilo de vida saludable, hacen deporte, disfrutan de la naturaleza y buscan un equilibrio emocional con ellos y con su entorno (familia, amigos).
 
-## Objetivo de los usuarios y su relación con el producto
+## Objetivo del producto con los usuarios
 El primer objetivo es que los usuarios al ver la plataforma se identifiquen y se sientan cómodos con ella al momento de interactuar. El segundo, poder intercambiar mensajes con su entorno cercano que entienda la finalidad: transmitir mensajes de luz o felicidad que inspire a disfrutar la vida día a día.
 
 ## Solución al problema de los usuarios
