@@ -3,39 +3,38 @@ body{
     background-size: 100 vh 100 vw;
     background-attachment: fixed;
     text-align: center;
-    margin: 0;
+
     font-family: 'Philosopher', sans-serif;
     color: black;
     margin-top: 4%;
+    margin-bottom: 0%;
 }
 
 .header{
     color: #379564;
     background: rgba(125, 207, 163, 0.5);
     font-family: 'Kaushan Script', cursive;
-    font-size: 20px;
+    font-size: 140%;
+    font-weight: bolder;
     letter-spacing: 3px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     margin-left: 25%;
     width: 50%;
 }
 
 h1{
-   font-size: 170%;
-   font-weight: bolder;
-   text-shadow: 3px 3px 2px #997300;
-   margin-top: 1px;
-   margin-bottom: 1px;
-   padding-bottom: 1px;
+  text-shadow: 3px 3px 2px #997300;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-bottom: 1px;
 }
 
 h2{
-   font-size: 140%;
-   text-decoration: overline;
-   letter-spacing: 0px;
-   margin-top: 0px;
-   padding-top: 0px;
+  text-decoration: overline;
+  letter-spacing: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
  }
 
 * {
@@ -43,10 +42,11 @@ h2{
 }
 
 .section{
-    color: #b35900;
+    color: #333333;
     background: rgba(255, 204, 51, 0.5);
     font-size: 18px;
     font-weight: bolder;
+    text-align: center;
     width: 50%;
     margin-left: 25%;
     margin-bottom: 10%;
@@ -58,14 +58,14 @@ h2{
 
 input{
   font-family: 'Economica', sans-serif;
-  font-size: 80%;
+  font-size: 14px;
   font-weight: bolder;
-  height: 34px;
-  widht: 200px;
+  height: 45px;
+  width: 200px;
   margin: 10px auto;
   padding-top: 1%;
   padding-bottom: 1%;
-  border: 1px solid #08c;
+
   border: solid grey;
   border-radius: 5px;
   opacity: 0.6;
@@ -75,99 +75,81 @@ button{
     color: #0f0f0a;
     background-color: #379564;
     font-family: 'Philosopher', sans-serif;
-    font-size: 16 px;
+    font-size: 15px;
     font-weight: 100;
+    font-weight: bolder;
     text-align: center;
-    width: 45%;
-    margin-top: 8%;
+    height: 48px;
+    width: 33%;
+    margin-top: 5%;
     margin-bottom: 1%;
-    padding: 12px;
-    border: 5px #29704b;
-    border-radius: 5px;
+    /*padding: 12px;*/
+    border: 2px #29704b;
+    border-radius: 7px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
+    border-right: 4px solid #225d3f;
 }
 
 btn-reboot{
-    color: #0f0f0a;
-    background-color: #379564;
-    font-family: 'Philosopher', sans-serif;
-    font-weight: 100;
-    padding-bottom: 5px;
-    width: 74%;
-    border: 5px #29704b;
-    border-radius: 5px;
+    width: 50%;
 }
 
 textarea {
-    display: block;
-    font-size: 14px;
-     margin: 10px auto;
+    font-family: 'Economica', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align:center;
+    width:50%;
+    height: 100px;
+    line-height: 20px;
+    margin: 10px auto;
     padding: 8px 4px 8px 4px;
     border-radius: 5px;
     box-shadow: inset 0 1px 2px rgba(0,0,0, .55), 0px 1px 1px rgba(255,255,255,.5);
     border: 1px solid grey;
     opacity: 0.6;
-    /******/
-    border: solid grey;
-    width:50%;
-    text-align:center;
-    font-family: 'Economica', sans-serif;
-    height: 100px;
-    line-height: 20px;
+
 }
 
 textarea:hover,
 textarea:focus {
-    opacity: .7;
-    color:#000;
-    font-weight: 600;
-    0
-    box-shadow: 0px 1px 0px rgba(255,255,255,.25),inset 0px 3px 6px rgba(0,0,0,.25);
-    /*******/
-    border: solid grey;
-    width:50%;
-    text-align:center;
-    font-family: 'Economica', sans-serif;
-    margin: 10px auto;
-    height: 100px;
-    line-height: 20px;
+  opacity: .7;
+  font-weight: 600;
+  border: solid grey;
+  box-shadow: 0px 1px 0px rgba(255,255,255,.25),inset 0px 3px 6px rgba(0,0,0,.25);
 }
 
 @media (max-width: 360px) {
 .header{
-    font-size: 16px;
+    font-size: 12px;
     }
 h2{
-    font-size: 100%;
+    font-size: 85%;
 }
 
 .section{
-    font-size: 15px;
+    font-size: 12px;
+}
+
+input{
+  font-size: 10px;
+  height: 30px;
+  width: 100px;
 }
 
 button{
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 80;
     text-align: center;
-    width: 50%;
+    height: 38px;
+    width: 60%;
     margin-bottom: 4%;
 }
 
 textarea {
-    display: block;
-    font-size: 12px;
-     margin: 10px auto;
-    padding: 8px 4px 8px 4px;
-    border-radius: 5px;
-    box-shadow: inset 0 1px 2px rgba(0,0,0, .55), 0px 1px 1px rgba(255,255,255,.5);
-    border: 1px solid grey;
-    opacity: 0.6;
-    /******/
-    border: solid grey;
-    width:80%;
-    text-align:center;
-    font-family: 'Economica', sans-serif;
-    height: 85px;
-    line-height: 20px;
+  font-size: 12px;
+  width:80%;
+  height: 80px;
 }
 
 }
